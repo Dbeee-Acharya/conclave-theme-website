@@ -6,26 +6,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kantipur Conclave</title>
   <link href="output.css" rel="stylesheet">
+  <script src="./js/navBar.js" />
 </head>
 
 <body>
-  <header class="bg-[url('./assets/main-banner.jpg')] h-svh">
-    <nav class="sticky top-0 z-20 px-8 py-4 flex items-center justify-start gap-32">
-      <div>
-        <img class="h-36 w-auto" src="https://kantipurconclave.com/v2/assets/image/logo.svg" alt="">
-      </div>
+  <header class="fixed w-svw top-0 z-20 md:px-52 py-4 flex items-center justify-between gap-32">
+    <div class="min-w-28">
+      <img class="h-36  min-h-8" src="https://kantipurconclave.com/v2/assets/image/logo.svg" alt="">
+    </div>
 
-      <div
-        class="bg-white backdrop-filter backdrop-blur-lg bg-opacity-20 w-2/5 rounded-3xl flex items-center justify-between p-4">
-        <a href="">TEST</a>
-        <a href="">TEST</a>
-        <a href="">TEST</a>
-        <a href="">TEST</a>
-        <a href="">TEST</a>
-      </div>
-    </nav>
+    <div class="md:hidden">
+      <button id="hamburger" class="focus:outline-none">
+        <!-- Hamburger Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
 
+    <div
+      class="urbanist text-base bg-white backdrop-filter backdrop-blur-lg bg-opacity-20 rounded-3xl md:flex md:gap-9 items-center justify-between hidden py-3 px-4">
+      <a href="#">HOME</a>
+      <a href="#">ABOUT</a>
+      <a href="#">PANELIST</a>
+      <a href="#">SCHEDULE</a>
+      <a href="#">MEDIA</a>
+      <a href="#">CONTACT</a>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu"
+      class="absolute top-16 right-0 w-full bg-white backdrop-filter backdrop-blur-lg bg-opacity-5 rounded-b-xl hidden md:hidden">
+      <nav class="flex flex-col py-4">
+        <a href="#" class="px-4 py-2">HOME</a>
+        <a href="#" class="px-4 py-2">ABOUT</a>
+        <a href="#" class="px-4 py-2">PANELIST</a>
+        <a href="#" class="px-4 py-2">SCHEDULE</a>
+        <a href="#" class="px-4 py-2">MEDIA</a>
+        <a href="#" class="px-4 py-2">CONTACT</a>
+      </nav>
+    </div>
   </header>
+
+
+  <banner class="bg-[url('./assets/main-banner.jpg')] h-svh bg-cover bg-center w-svw block">
+
+  </banner>
+
+  <div class=" bg-gradient-to-r from-custom-purple via-custom-blue via-35% to-custom-light-blue ">
+    <div>
+      <img class="h-90 w-auto" src="https://kantipurconclave.com/v2/assets/image/logo.svg" alt="">
+    </div>
+  </div>
 
 </body>
 
