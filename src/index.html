@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kantipur Conclave</title>
   <link href="output.css" rel="stylesheet">
-  <script src="./js/navBar.js" />
+  <!--<script src="./js/navBar.js" />-->
 </head>
 
 <body>
@@ -36,7 +36,7 @@
 
     <!-- MOBILE MENU -->
     <div id="mobile-menu"
-      class="absolute top-16 right-0 w-full bg-white backdrop-filter backdrop-blur-lg bg-opacity-5 rounded-b-xl hidden md:hidden">
+      class="absolute top-16 right-0 w-full bg-white backdrop-filter backdrop-blur-lg bg-opacity-5 rounded-b-xl hidden md:hidden h-svh">
       <nav class="flex flex-col py-4">
         <a href="#" class="px-4 py-2">HOME</a>
         <a href="#" class="px-4 py-2">ABOUT</a>
@@ -59,6 +59,16 @@
     </div>
   </div>
 
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    })
+
+  </script>
 </body>
 
 </html>
